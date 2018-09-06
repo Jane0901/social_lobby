@@ -1,0 +1,54 @@
+div, span, a {
+  margin:0px;
+  padding:0px;
+  border:0;
+  font-size:30%;
+  font:inherit;
+  vertical-align:baseline;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+* {
+  box-sizing:initial;
+  margin:0px;
+  padding:0;
+}
+
+.marquee {
+  height:50px;
+  width:1250px;
+  overflow:auto;
+  position:initial;
+}
+
+.marquee div {
+  display:block;
+  width:200%;
+  height:30px;
+  position:absolute;
+  overflow:hidden;
+  animation:marquee 5s linear infinite;
+}
+
+.marquee span {
+  float:left;
+  width:50%;
+}
+
+*, *:before, *:after {
+  padding:initial;
+  margin:auto;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+*, p, div {
+  user-select:text!important;
+  -moz-user-select:text!important;
+  -webkit-user-select:text!important;
+}
+
