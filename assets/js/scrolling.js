@@ -13,5 +13,5 @@ $(function(){
    }
   setInterval( function(){
     moveTop();
-  }, 10000);
+  }, 20000);
   });
