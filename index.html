@@ -28,8 +28,10 @@
 <body>
     <div>
         <div class="container">
-            <div class="row">
-                <div class="col-8">
+            <div class="row d-flex justify-content-center">
+                <div class="col-8 align-self-center">
+
+                  <!-- USR 跑馬燈 -->
                     <div style="padding-top:10px;">
                       <!-- data-interval="10000" interval is in milliseconds. 1000 = 1 second -> so 1000 * 10 = 10 seconds -->
                         <div class="carousel slide" data-ride="carousel" data-interval="10000" id="carousel-2"  style="/*min-height:500px;*/height:308px;margin-right:0;padding-top:0px;margin-bottom:14px;">
@@ -82,161 +84,198 @@
                             <li data-target="#carousel-2" data-slide-to="1" class="active"></li>
                         </ol>
                     </div>
-                </div>
-                <div class="d-inline-block float-left" style="width:394px;height:45px;background-color:#ffffff;">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <thead style="font-size:18px;">
-                                <tr style="height:43px;">
-                                    <th class="text-center" style="width:23.5%;">日期</th>
-                                    <th class="text-center" style="width:25%;">活動類別</th>
-                                    <th class="text-center" style="width:25%;">內容</th>
-                                    <th class="text-center">詳細資訊</th>
-                                </tr>
-                            </thead>
-                            <tbody class="d-none invisible">
-                                <tr>
-                                    <td>Cell 1</td>
-                                    <td>Cell 2</td>
-                                </tr>
-                                <tr>
-                                    <td>Cell 3</td>
-                                    <td>Cell 4</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
+
+                <!-- 學生活動跑馬燈，社科各單位資訊，用成flexbox -->
+                <div class="d-flex">
+
+                <!-- 學生活動跑馬燈 -->
+                <div>
+                  <div class="d-inline-block float-left" style="width:394px;height:45px;background-color:#ffffff;">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead style="font-size:18px;">
+                                  <tr style="height:43px;">
+                                      <th class="text-center" style="width:23.5%;">日期</th>
+                                      <th class="text-center" style="width:25%;">活動類別</th>
+                                      <th class="text-center" style="width:25%;">內容</th>
+                                      <th class="text-center">詳細資訊</th>
+                                  </tr>
+                              </thead>
+                              <tbody class="d-none invisible">
+                                  <tr>
+                                      <td>Cell 1</td>
+                                      <td>Cell 2</td>
+                                  </tr>
+                                  <tr>
+                                      <td>Cell 3</td>
+                                      <td>Cell 4</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+                  <div class="d-inline-block float-left scroll_container" style="height:327px;width:394px;background-color:white;margin-top:0px;margin-bottom:0px;font-size:18px;">
+
+                      <ul class="d-table-cell" style="width:394px;height:300px;margin-left:0px;margin-bottom:0px;">
+
+                        <li style="height:110px;">
+                          <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td style="width:20%;">
+                                            <p style="margin-bottom:0px;">08-26</p>
+                                            <p style="margin-bottom:0px;">03:00pm</p>
+                                            <p style="margin-bottom:0px;">USR</p>
+                                        </td>
+                                        <td style="width:25%;">音樂會</td>
+                                        <td style="width:25%;">祖孫情音樂會</td>
+                                        <td>
+                                          <div class="container-fluid">
+                                          <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+                                               class="qr-code img-thumbnail img-responsive"  id="generate">
+                                            <div class="form-horizontal">
+                                              <div class="form-group">
+                                                  <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                          </div>
+                          </li>
+
+                          <li style="height:110px;">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:20%;">
+                                                <p style="margin-bottom:0px;">08-26</p>
+                                                <p style="margin-bottom:0px;">03:00pm</p>
+                                                <p style="margin-bottom:0px;">USR</p>
+                                            </td>
+                                            <td style="width:25%;">音樂會</td>
+                                            <td style="width:25%;">祖孫情音樂會</td>
+                                            <td>
+                                              <div class="container-fluid">
+                                                <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+                                                     class="qr-code img-thumbnail img-responsive"  id="generate">
+
+                                                <div class="form-horizontal">
+                                                  <div class="form-group">
+                                                      <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                          </li>
+                          <li style="height:110px;">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td style="width:20%;">
+                                                <p style="margin-bottom:0px;">08-26</p>
+                                                <p style="margin-bottom:0px;">03:00pm</p>
+                                                <p style="margin-bottom:0px;">USR</p>
+                                            </td>
+                                            <td style="width:25%;">音樂會</td>
+                                            <td style="width:25%;">祖孫情音樂會</td>
+                                            <td>
+                                              <div class="container-fluid">
+                                                <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+                                                     class="qr-code img-thumbnail img-responsive"  id="generate">
+
+                                                <div class="form-horizontal">
+                                                  <div class="form-group">
+                                                      <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                        <li style="height:110px;">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <tbody>
+                                      <tr>
+                                          <td style="width:20%;">
+                                              <p style="margin-bottom:0px;">08-26</p>
+                                              <p style="margin-bottom:0px;">03:00pm</p>
+                                              <p style="margin-bottom:0px;">學生會</p>
+                                          </td>
+                                          <td style="width:25%;">音樂會</td>
+                                          <td style="width:25%;">祖孫情音樂會</td>
+                                          <td>
+                                            <div class="container-fluid">
+                                                    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
+                                                     class="qr-code img-thumbnail img-responsive"  id="generate">
+
+                                                    <div class="form-horizontal">
+                                                      <div class="form-group">
+                                                          <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
+                                                      </div>
+                                                    </div>
+                                            </div>
+                                          </td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                        </li>
+                      </ul>
+                  </div>
                 </div>
-                <div class="d-inline-block float-left scroll_container" style="height:327px;width:394px;background-color:white;margin-top:0px;margin-bottom:0px;font-size:18px;">
-                    <ul class="d-table-cell" style="width:394px;height:300px;margin-left:0px;margin-bottom:0px;">
-                        <li style="height:110px;"><div class="table-responsive">
-    <table class="table">
-        <tbody>
-            <tr>
-                <td style="width:20%;">
-                    <p style="margin-bottom:0px;">08-26</p>
-                    <p style="margin-bottom:0px;">03:00pm</p>
-                    <p style="margin-bottom:0px;">USR</p>
-                </td>
-                <td style="width:25%;">音樂會</td>
-                <td style="width:25%;">祖孫情音樂會</td>
-                <td><div class="container-fluid">
-    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
-         class="qr-code img-thumbnail img-responsive"  id="generate">
-  <div class="form-horizontal">
-    <div class="form-group">
-        <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
-    </div>
-  </div>
-</div></td>
-            </tr>
-        </tbody>
-    </table>
-</div></li>
-                        <li style="height:110px;"><div class="table-responsive">
-    <table class="table">
-        <tbody>
-            <tr>
-                <td style="width:20%;">
-                    <p style="margin-bottom:0px;">08-26</p>
-                    <p style="margin-bottom:0px;">03:00pm</p>
-                    <p style="margin-bottom:0px;">學生會</p>
-                </td>
-                <td style="width:25%;">音樂會</td>
-                <td style="width:25%;">祖孫情音樂會</td>
-                <td><div class="container-fluid">
-    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
-         class="qr-code img-thumbnail img-responsive"  id="generate">
 
-  <div class="form-horizontal">
-    <div class="form-group">
-        <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
-    </div>
-  </div>
-</div></td>
-            </tr>
-        </tbody>
-    </table>
-</div></li>
-                        <li style="height:110px;"><div class="table-responsive">
-    <table class="table">
-        <tbody>
-            <tr>
-                <td style="width:20%;">
-                    <p style="margin-bottom:0px;">08-26</p>
-                    <p style="margin-bottom:0px;">03:00pm</p>
-                    <p style="margin-bottom:0px;">USR</p>
-                </td>
-                <td style="width:25%;">音樂會</td>
-                <td style="width:25%;">祖孫情音樂會</td>
-                <td><div class="container-fluid">
-    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
-         class="qr-code img-thumbnail img-responsive"  id="generate">
-
-  <div class="form-horizontal">
-    <div class="form-group">
-        <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
-    </div>
-  </div>
-</div></td>
-            </tr>
-        </tbody>
-    </table>
-</div></li>
-                        <li style="height:110px;"><div class="table-responsive">
-    <table class="table">
-        <tbody>
-            <tr>
-                <td style="width:20%;">
-                    <p style="margin-bottom:0px;">08-26</p>
-                    <p style="margin-bottom:0px;">03:00pm</p>
-                    <p style="margin-bottom:0px;">學生會</p>
-                </td>
-                <td style="width:25%;">音樂會</td>
-                <td style="width:25%;">祖孫情音樂會</td>
-                <td><div class="container-fluid">
-    <img src="https://chart.googleapis.com/chart?cht=qr&chl=Hello+World&chs=160x160&chld=L|0"
-         class="qr-code img-thumbnail img-responsive"  id="generate">
-
-  <div class="form-horizontal">
-    <div class="form-group">
-        <p type="text"  id="content" style="display:none">https://www.ntpu.edu.tw/chinese/
-    </div>
-  </div>
-</div></td>
-            </tr>
-        </tbody>
-    </table>
-</div></li>
-                    </ul>
-                </div>
+                <!-- 社科各單位資訊 -->
                 <div class="d-inline-block" id="button" style="height:300px;width:306px;background-color:white;margin-left:24px;margin-top:0px;margin-right:0px;margin-bottom:-1px;">
-                    <h1 class="text-center" style="font-size:24px;margin-bottom:0px;background-color:rgba(199,225,248,0.47);padding:11px;height:40px;"><strong>各單位聯絡資訊</strong></h1>
-<button class="btn btn-info" onclick="runToast('social')">8F 院辦公室</button>
-<button class="btn btn-light" onclick="runToast('usr')">8F USR辦公室</button>
-<button class="btn btn-info" onclick="runToast('cls')">8F16 台灣發展研究中心</button>
-<button class="btn btn-light" onclick="runToast('timeout')">7F 社會工作學系</button>
-<button class="btn btn-info" onclick="runToast('callback')">6F 社會學系</button>
-<button class="btn btn-light" onclick="runToast('class')">5F19 犯罪學研究所</button>
-<button class="btn btn-info" onclick="runToast()">3F19 經濟學系</button>
 
-<script>
-    function runToast(mode) {
-        var toast = Metro.toast.create;
-        switch (mode) {
-            case 'social': toast("電話：02-8674-1111 轉 67001-67002", null,5000)
-            ;break;
-            case 'usr': toast("電話：02-8674-1111", null, 5000); break;
-            case 'callback': toast("電話：02-8674-1111 轉 67046-67050", null,5000)
-            ;break;
-            case 'timeout': toast("電話：02-8674-1111 轉 67012-67016", null, 5000); break;
-            case 'class': toast("電話：02-8674-1111 轉 67083-67087", null, 5000); break;
-            case 'cls': toast("電話：02-8674-1111 轉 67005", null, 5000); break;
-            default: toast("電話：02-8674-1111 轉 67160-67161");
-        }
-    }
-</script></div>
-            </div>
+                    <h1 class="text-center" style="font-size:24px;margin-bottom:0px;background-color:rgba(199,225,248,0.47);padding:11px;height:40px;"><strong>各單位聯絡資訊</strong>
+                    </h1>
+
+                    <button class="btn btn-info" onclick="runToast('social')">8F 院辦公室</button>
+                    <button class="btn btn-light" onclick="runToast('usr')">8F USR辦公室</button>
+                    <button class="btn btn-info" onclick="runToast('cls')">8F16 台灣發展研究中心</button>
+                    <button class="btn btn-light" onclick="runToast('timeout')">7F 社會工作學系</button>
+                    <button class="btn btn-info" onclick="runToast('callback')">6F 社會學系</button>
+                    <button class="btn btn-light" onclick="runToast('class')">5F19 犯罪學研究所</button>
+                    <button class="btn btn-info" onclick="runToast()">3F19 經濟學系</button>
+
+                    <script>
+                        function runToast(mode) {
+                            var toast = Metro.toast.create;
+                            switch (mode) {
+                                case 'social': toast("電話：02-8674-1111 轉 67001-67002", null,5000)
+                                ;break;
+                                case 'usr': toast("電話：02-8674-1111", null, 5000); break;
+                                case 'callback': toast("電話：02-8674-1111 轉 67046-67050", null,5000)
+                                ;break;
+                                case 'timeout': toast("電話：02-8674-1111 轉 67012-67016", null, 5000); break;
+                                case 'class': toast("電話：02-8674-1111 轉 67083-67087", null, 5000); break;
+                                case 'cls': toast("電話：02-8674-1111 轉 67005", null, 5000); break;
+                                default: toast("電話：02-8674-1111 轉 67160-67161");
+                            }
+                        }
+                    </script>
+                </div>
+                </div>
+
+                </div>
+
+
+            <!-- 活動海報 -->
             <div class="col-4" style="height:230px;">
                 <div class="d-block" style="height:470px;margin-top:10px;margin-bottom:10px;">
                   <!-- add the data-interval setting to control the duration of each slide -->
