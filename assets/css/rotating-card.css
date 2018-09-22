@@ -1,6 +1,6 @@
 body {
   font-size:14px;
-  font-family:"微軟正黑體", "Microsoft JhengHei", "Helvetica Nueue",Arial,Verdana,sans-serif;
+  font-family:"Microsoft JhengHei","Helvetica Nueue",Arial,Verdana,"微軟正黑體",sans-serif;
   background-color:#E5E9ED;
 }
 
@@ -355,4 +355,3 @@ pre.prettyprint {
     visibility:visible;
   }
 }
-
